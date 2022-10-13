@@ -1,4 +1,4 @@
-import NAVBAR from "../modules/Admin_navbar";
+import { Admin_navbar } from "../modules/Admin_navbar";
 import { CContainer } from "../modules/Card_container";
 import { TABLE } from "../modules/table_design";
 import data from '../../extraTest/tabledata.json';
@@ -6,7 +6,7 @@ import data from '../../extraTest/tabledata.json';
 export function ADMIN_HOME() {
     return (
         <>
-            <NAVBAR />
+            <Admin_navbar/>
             <div className="row row-cols-1 row-cols-md-2 g-4">
                 <CContainer title="favorite channel" channelname="name" subs="100"/>
                 <CContainer title="trending" channelname="nam2" subs="550"/>

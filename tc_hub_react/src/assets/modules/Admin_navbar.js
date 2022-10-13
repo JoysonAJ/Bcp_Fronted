@@ -1,6 +1,6 @@
 import '../style/admin_panel.css';
 
-export function NAVBAR() {
+export function Admin_navbar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,4 +53,4 @@ export function NAVBAR() {
 
 
 
-export default NAVBAR;
+export default Admin_navbar;

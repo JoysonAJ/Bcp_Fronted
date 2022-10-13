@@ -46,6 +46,7 @@ export function Community() {
                             }
                         )}
                     </div>
+                    <br/>
                 </>
             );
         }
