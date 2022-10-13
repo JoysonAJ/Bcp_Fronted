@@ -9,7 +9,6 @@ export function TABLE(data1) {
             )
         }
     )
-    console.log(key);
     const DisplayData = (data1.data).map(
         (info) => {
             return (
@@ -33,7 +32,7 @@ export function TABLE(data1) {
         <>
             <div class="main-card mb-3 card">
                 <div class="card-body">
-                    <h5 class="card-title">Table responsive</h5>
+                    <h5 class="card-title">{data1.heading}</h5>
                     <div class="table-responsive">
                         <table class="mb-0 table">
                             <thead>

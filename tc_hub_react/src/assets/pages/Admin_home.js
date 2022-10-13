@@ -12,7 +12,7 @@ export function ADMIN_HOME() {
                 <CContainer title="trending" channelname="nam2" subs="550"/>
             </div>
 
-            <TABLE data={data}/>
+            <TABLE heading="TAble Heading" data={data}/>
             <a href="/nav">nav</a>
             <br />
             <a href='/table'>view Table</a>
