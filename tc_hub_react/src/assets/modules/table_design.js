@@ -1,18 +1,35 @@
 
 export function TABLE(data1) {
-        const DisplayData=(data1.data).map(
-            (info)=>{
-                return(
-                    <tr>
-                        <td>{info.name}</td>
-                        <td>{info.gender}</td>
-                        <td>{info.designation}</td>
-                    </tr>
-                )
-            }
-        )
+    var key = [];
+    const Displaykey = (Object.keys(data1.data[1])).map(
+        (info) => {
+            key.push(info)
+            return (
+                <th>{info}</th>
+            )
+        }
+    )
+    console.log(key);
+    const DisplayData = (data1.data).map(
+        (info) => {
+            return (
+                <tr>
+                    {
+                        key.map(
+                            (k) => {
+                                return (
+                                    <td>{info[k]}</td>
+                                );
+                            }
+                        )
+                    }
+                </tr>
+            )
+        }
+    )
 
     return (
+
         <>
             <div class="main-card mb-3 card">
                 <div class="card-body">
@@ -21,14 +38,10 @@ export function TABLE(data1) {
                         <table class="mb-0 table">
                             <thead>
                                 <tr>
-                                    
-                                    <th>name</th>
-                                    <th>Gender</th>
-                                    <th>designation</th>
+                                    {Displaykey}
                                 </tr>
                             </thead>
                             <tbody>
-                                
                                 {DisplayData}
                             </tbody>
                         </table>
