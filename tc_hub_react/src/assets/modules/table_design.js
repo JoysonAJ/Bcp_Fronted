@@ -5,19 +5,19 @@ export function TABLE(data1) {
         (info) => {
             key.push(info)
             return (
-                <th>{info}</th>
+                <th key={info}>{info}</th>
             )
         }
     )
     const DisplayData = (data1.data).map(
         (info) => {
             return (
-                <tr>
+                <tr key={info[key[0]]}>
                     {
                         key.map(
                             (k) => {
                                 return (
-                                    <td>{info[k]}</td>
+                                    <td key={info[k]}>{info[k]}</td>
                                 );
                             }
                         )
@@ -30,11 +30,11 @@ export function TABLE(data1) {
     return (
 
         <>
-            <div class="main-card mb-3 card">
-                <div class="card-body">
-                    <h5 class="card-title">{data1.heading}</h5>
-                    <div class="table-responsive">
-                        <table class="mb-0 table">
+            <div className="main-card mb-3 card">
+                <div className="card-body">
+                    <h5 className="card-title">{data1.heading}</h5>
+                    <div className="table-responsive">
+                        <table className="mb-0 table">
                             <thead>
                                 <tr>
                                     {Displaykey}

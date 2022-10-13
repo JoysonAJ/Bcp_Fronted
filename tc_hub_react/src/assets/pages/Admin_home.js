@@ -7,7 +7,7 @@ export function ADMIN_HOME() {
     return (
         <>
             <NAVBAR />
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
                 <CContainer title="favorite channel" channelname="name" subs="100"/>
                 <CContainer title="trending" channelname="nam2" subs="550"/>
             </div>
